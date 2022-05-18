@@ -15,7 +15,6 @@
 <script setup lang="ts">
 import GenderComp, { type Gender } from './GenderComp.vue'
 import { ref, reactive, computed } from 'vue'
-
 const genders: Gender[] = [
     {       
         name: 'Alocasia',
@@ -40,9 +39,7 @@ const genders: Gender[] = [
     },
     
 ]
-
 const selectedIndex = ref(-1)
-
 function onGenderSelected(optionIndex: number) {
     selectedIndex.value = optionIndex
 }
@@ -57,7 +54,6 @@ function onGenderSelected(optionIndex: number) {
     border-radius: 10px;
     justify-content: space-between;
 }
-
 .tab-box {
     width: 400px;
     display: flex;
@@ -67,5 +63,4 @@ function onGenderSelected(optionIndex: number) {
     padding: 15px;
     border-radius: 10px;
 }
-
 </style>
